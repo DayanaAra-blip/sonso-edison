@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.carta {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#si {
+    background-color: #32cd32;
+    color: white;
+}
+
+#no {
+    background-color: #ff6347;
+    color: white;
+}
+
+.corazones {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.corazones div {
+    position: absolute;
+    color: red;
+    font-size: 24px;
+    animation: caer 3s infinite;
+}
+
+@keyframes caer {
+    0% { top: -50px; }
+    100% { top: 100vh; }
+}
+
+.sapos {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    font-size: 50px;
+}
